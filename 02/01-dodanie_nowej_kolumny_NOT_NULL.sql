@@ -7,10 +7,10 @@ ALTER TABLE heroes ADD COLUMN is_teamleader boolean DEFAULT False NOT NULL;
 SELECT is_teamleader, hero_id FROM heroes;
 
 -- Usunięcie nowej kolumny
-ALTER TABLE heroes DROP COLUMN is teamleader;
+ALTER TABLE heroes DROP COLUMN is_teamleader;
 
 -- Dodanie nowej kolumny (bez ograniczenia NOT NULL)
-ALTER TABLE heroes ADD COLUMN is_teamleader boolean;
+ALTER TABLE heroes ADD COLUMN is_teamleader boolean DEFAULT False;
 
 -- Sprawdzenie wartości w nowej kolumnie
 SELECT is_teamleader, hero_id FROM heroes;
