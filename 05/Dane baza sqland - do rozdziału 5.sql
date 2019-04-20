@@ -53,7 +53,7 @@ CREATE TABLE public.heroes (
     mana integer,
     hero_id integer,
     birthdate date,
-    is_teamleader boolean NOT NULL,
+    is_teamleader boolean NOT NULL DEFAULT False,
     gold decimal(10,2) DEFAULT 0 NOT NULL
 );
 
