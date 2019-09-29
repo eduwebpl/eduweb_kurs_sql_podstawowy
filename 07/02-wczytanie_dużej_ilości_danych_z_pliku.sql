@@ -1,0 +1,1 @@
+COPY big_data FROM "E:/EduWeb kurs/eduweb_kurs_sql_podstawy/07/big_random_data_set.csv" WITH CSV;
